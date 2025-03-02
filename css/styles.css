@@ -5,37 +5,168 @@ body {
 /* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
 
 .robot-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .robot-face-shape {
+   width: 600px;
+   height: 600px;
+   border: 2px solid;
+   border-radius: 15%;
+   background-color: darkgray;
+   margin-top: 100px;
+
 }
 
 .robot-eye-left {
+   top: 70px;
+   left: 75px;
+   width: 150px;
+   height: 150px;
+   border: 1px solid;
+   border-radius: 50%;
+   background-color: #40e0d0;
+   background: linear-gradient(90deg, #40e0d0, #ff8c00, #ff0080);
+   opacity: 50%;
+   position: relative;
+   z-index: 2;
 }
 
-.robot-eye-right {
+
+.robot-eye-right{
+   left: 28.125rem;
+   top: -4.375rem;
+   width: 0;
+   height: 0;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-bottom: 100px solid red;
+   background-image: url(../assets/images/eye.webp);
+   position: relative;
+   z-index: 2;
 }
+.robot-eye-right:after {
+   width: 0;
+   height: 0;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-top: 100px solid red;
+   position: absolute;
+   content: "";
+   top: 30px;
+   left: -50px;
+ }
 
 .robot-ear-left {
+   position: fixed;
+   top: 200px;
+   left: 550px;
+   width: 7.875rem;
+   height: 11.25rem;
+   background-color: rgb(80, 174, 218);
+   background-color: rgb(80, 174, 218);
+   background-image: url("../image/cpu.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border: 2px black solid;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+   z-index: 1;
 }
-
 .robot-ear-right {
+   position: fixed;
+   top: 250px;
+   right: 550px;
+   width: 0px;
+   height: 0px;
+   border-right: 60px solid transparent;
+   border-top: 60px solid rgb(255, 208, 0);
+   border-left: 60px solid rgb(255, 208, 0);
+   border-bottom: 60px solid rgb(255, 208, 0);
+   border-top-left-radius: 60px;
+   border-top-right-radius: 60px;
+   border-bottom-left-radius: 60px;
+   border-bottom-right-radius: 60px;
 }
 
 .robot-nose {
+   position: absolute;
+   top: -50px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 0;
+   height: 0;
+   border: 30px solid transparent;
+   border-bottom-color: rgb(46, 41, 41);
+   position: relative;
 }
-
-.robot-nose:before {
-}
-
 .robot-nose:after {
-}
+   content: '';
+   position: absolute;
+   left: -50px;
+   top: 30px;
+   width: 0;
+   height: 0;
+   border: 50px solid transparent;
+   border-top-color: rgb(59, 55, 55);
+ }
 
-.robot-teeth {
-}
 
-.robot-tooth {
-}
+ .robot-mouth {
+   position: fixed;
+   top: 555px;
+   left: 960px;
+   transform: translateX(-50%);
+   width: 33.8125em;
+   height: 9.725em;
+   border: 2px solid;
+   border-color: transparent transparent black transparent;
+   background-color: darkgreen;
+ }
+ .robot-teeth {
+   display: flex;
+   justify-content: center;
+   gap: 5px;
+   margin-top: 100px;
+   z-index: 1;
+ }
+
+ .robot-tooth {
+   width: 0;
+   height: 0;
+   border-left: 25px solid transparent;
+   border-right: 25px solid transparent;
+   border-bottom: 50px solid rgb(151, 8, 156);
+   margin: 0 2px;
+   z-index: 1;
+ }
+
 
 .robot-hair-style {
+   position: absolute;
+   top: 115px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   align-items: flex-end;
+   }
+
+.robot-hair-one {
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-bottom: 20px solid #ffcc00;
 }
+.robot-hair-two {
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-bottom: 40px solid #ffcc00;
+ }
+
+.robot-hair-three {
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-bottom: 30px solid #ffcc00;
+}
+

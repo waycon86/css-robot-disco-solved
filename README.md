@@ -15,21 +15,21 @@ This assignment should prove that a student is able to:
 
 ## Standard requirements
 
-- [ ] Use the "Fancy Robot" exercise file from the "Position it right" approved assignment.
-- [ ] All the tasks of the "Specific requirements" section MUST be solved
-- [ ] The code of the index.html and styles.css should pass the W3C validation (Feel free to use either the "w3c web validator" VSCode extension or the "Online w3c Markup Validation Service")
-- [ ] The code MUST be formatted with Prettier.
-- [ ] Push the changes to the Github repo, when finished.
-- [ ] Submit a .txt file with the Github repo url.
+- [x ] Use the "Fancy Robot" exercise file from the "Position it right" approved assignment.
+- [ x] All the tasks of the "Specific requirements" section MUST be solved
+- [ x] The code of the index.html and styles.css should pass the W3C validation (Feel free to use either the "w3c web validator" VSCode extension or the "Online w3c Markup Validation Service")
+- [ x] The code MUST be formatted with Prettier.
+- [x] Push the changes to the Github repo, when finished.
+- [ x] Submit a .txt file with the Github repo url.
 
 ## Specific requirements
 
 Acceptance criteria:
 
-- [ ] Animation with rotation is shown.
-- [ ] Animation with disappearing/appearing is shown.
-- [ ] Animation with changing dimensions is shown.
-- [ ] Animation with movement around some position is shown.
-- [ ] Animation on object hover event is shown.
-- [ ] Animation with color changing is shown.
-- [ ] Every facial feature item except for the face shape is animated.
+- [ x] Animation with rotation is shown.
+- [ x] Animation with disappearing/appearing is shown.
+- [ x] Animation with changing dimensions is shown.
+- [ x] Animation with movement around some position is shown.
+- [ x] Animation on object hover event is shown.
+- [ x] Animation with color changing is shown.
+- [ x] Every facial feature item except for the face shape is animated.
